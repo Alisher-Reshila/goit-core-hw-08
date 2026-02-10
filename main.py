@@ -184,7 +184,7 @@ def load_data(filename="addressbook.pkl"):
         with open(filename, "rb") as f:
             return pickle.load(f)
     except FileNotFoundError:
-        return AddressBook
+        return AddressBook()
 
 
 def main():
